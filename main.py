@@ -43,6 +43,7 @@ def write_on_screen(text, x_cor, y_cor):
 # Screen Initialization
 image = 'blank_states_img.gif'
 screen = turtle.Screen()
+screen.title('U.S States Guessing Game')
 screen.addshape(image)
 turtle.shape(image)
 
