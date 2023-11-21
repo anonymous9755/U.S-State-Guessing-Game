@@ -57,7 +57,7 @@ while is_game_on:
         # Checking if state is written on screen or not
         if not is_states_written(user_choice, written_states):
             state_row_data = states_data[states_data.state == user_choice]
-            write_on_screen(user_choice, int(state_row_data.x), int(state_row_data.y))
+            write_on_screen(user_choice, int(state_row_data.x.iloc[0]), int(state_row_data.y.iloc[0]))
             written_states.append(user_choice)
             # Now checking if state is added to the list of states or not
             if not is_state_remembered(user_choice, states_added):
